@@ -5388,6 +5388,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -87934,6 +87942,30 @@ var render = function () {
                 },
               ]),
             }),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "text-xs-center" },
+              [
+                _c("VTPagination", {
+                  attrs: {
+                    currentPage: _vm.currentPage,
+                    "total-pages": _vm.totalPages,
+                    "boundary-links": true,
+                    maxPageLinks: 4,
+                  },
+                  on: {
+                    "update:currentPage": function ($event) {
+                      _vm.currentPage = $event
+                    },
+                    "update:current-page": function ($event) {
+                      _vm.currentPage = $event
+                    },
+                  },
+                }),
+              ],
+              1
+            ),
           ],
           1
         ),
